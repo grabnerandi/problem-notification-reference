@@ -3,21 +3,22 @@ This repo provides reference implementations for custom Dynatrace Problem Notifi
 
 This GitHub repo should be a good starting point in case you want to build your own custom problem notification integration.
 The first sample we provide is written in Node.js and it implements several best practices
-#1: Validate Input Headers
-#2: Validate Input Values
-#3: Correctly Handle Test Notification Messages
-#4: Pull all Problem Details through Dynatrace REST API
-#5: Push a Comment back to Dynatrace
+1. Validate Input Headers
+2. Validate Input Values
+3. Correctly Handle Test Notification Messages
+4. Pull all Problem Details through Dynatrace REST API
+5. Push a Comment back to Dynatrace
 
 To run this sample and connect it with Dynatrace
-*Pre-Requisits*
-#1: Sign-up for a [Dynatrace SaaS Free Trial](http://bit.ly/dtsaastrial)
-#2: You need to have node.js runtime and a tool such as ngrok to expose your local node.js app via a public IP. Alternatively you can obviously run the app on a public accessible web server
 
-*Lets GO:"
-#1: node app.js
-#2: ngrok http 80
-#3: In Dynatrace go to Settings -> Integration -> Problem Notification -> Set up notification -> Custom Integration
-#4: Configure the settings with your public IP address as shown in the following screenshot!
+**Pre-Requisits**
+1. Sign-up for a [Dynatrace SaaS Free Trial](http://bit.ly/dtsaastrial)
+2. You need to have node.js runtime and a tool such as [ngrok](https://ngrok.com/) to expose your local node.js app via a public IP. Alternatively you can obviously run the app on a public accessible web server
+
+**Lets GO:**
+1. node app.js
+2. ngrok http 80
+3. In Dynatrace go to Settings -> Integration -> Problem Notification -> Set up notification -> Custom Integration
+4. Configure the settings with your public IP address as shown in the following screenshot!
 
 ![](./images/customintegration.png)
