@@ -8,10 +8,8 @@ var port = process.env.PORT || 80,
 // ======================================================================
 // Here are some global config entries that change the behavior of the app
 // ======================================================================
-// var DT_API_URL = "https://YOURTENTANT.live.dynatrace.com";
-var DT_API_URL = "https://hci34192.live.dynatrace.com"
-// var DT_API_TOKEN = "YOURTOKEN!";
-var DT_API_TOKEN = "STervj4xTNynLdbVaZLq9";
+var DT_API_URL = "https://YOURTENTANT.live.dynatrace.com";
+var DT_API_TOKEN = "YOURTOKEN!";
 var requiredFields = ["PID","ImpactedEntities"];
 var requiredHeaders = ["x-source"];
 
