@@ -1,0 +1,11 @@
+2018-04-03T20:09:12.529Z - Info - Service is up and running - feed me with data!
+2018-04-03T20:09:18.029Z - Info - On URI /dthandler we received body: {
+ "PID" : "9114682195990673984",
+"ImpactedEntities" : ["SERVICE-52AC624D70C377BC"],
+"State":"OPEN",
+"ProblemID":"Problem 984",
+"ProblemTitle":"Requests to public networks: Failure rate increase"
+}
+2018-04-03T20:09:18.059Z - Info - 200 - OK: Seems that everything went fine!
+2018-04-03T20:09:18.590Z - Pushing Comment Resulted in 200 - undefined
+2018-04-03T20:09:18.634Z - Retrieving full problem details: {"result":{"id":"9114682195990673984","startTime":1522781760000,"endTime":1522783200000,"displayName":"984","impactLevel":"SERVICE","status":"CLOSED","severityLevel":"ERROR","commentCount":1,"tagsOfAffectedEntities":[],"rankedEvents":[{"startTime":1522781760000,"endTime":1522783200000,"entityId":"SERVICE-52AC624D70C377BC","entityName":"Requests to public networks","severityLevel":"ERROR","impactLevel":"SERVICE","eventType":"FAILURE_RATE_INCREASED","status":"CLOSED","severities":[{"context":"FAILURE_RATE","value":3.5714287757873535,"unit":"Percent (%)"}],"isRootCause":false,"serviceMethod":"http://www.dynatrace.com/","affectedRequestsPerMinute":33.6,"service":"Requests to public networks"},{"startTime":1522781760000,"endTime":1522783200000,"entityId":"SERVICE-52AC624D70C377BC","entityName":"Requests to public networks","severityLevel":"ERROR","impactLevel":"SERVICE","eventType":"FAILURE_RATE_INCREASED","status":"CLOSED","severities":[{"context":"FAILURE_RATE","value":2.127659559249878,"unit":"Percent (%)"}],"isRootCause":false,"serviceMethodGroup":"dynatrace.com","affectedRequestsPerMinute":56.4,"service":"Requests to public networks"}]}} - undefined

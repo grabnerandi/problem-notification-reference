@@ -14,12 +14,26 @@ To run this sample and connect it with Dynatrace
 **Pre-Requisits**
 1. Sign-up for a [Dynatrace SaaS Free Trial](http://bit.ly/dtsaastrial)
 2. You need to have node.js runtime and a tool such as [ngrok](https://ngrok.com/) to expose your local node.js app via a public IP. Alternatively you can obviously run the app on a public accessible web server
-3. Clone or download this repository. Edit app.js and provide your Dynatrace Tenant URL as well as a Dynatrace API Token. This is required for the additonal pull and push data use cases!
 
 **Lets GO:**
-1. node app.js
-2. ngrok http 80
-3. In Dynatrace go to Settings -> Integration -> Problem Notification -> Set up notification -> Custom Integration
-4. Configure the settings as shown in the following screenshot using your public IP address for the hosted service!
+Here are the steps to run this service and connect it with your Dynatrace instance
 
+1. Edit app.js and specify your Dynatrace Tenant URL and API Token.
+![](./images/editappjs.png)
+
+2. Now lets run the app: node app.js
+![](./images/runnodeapp.png)
+
+3. Now lets expose that local port to the world: ngrok http 80
+![](./images/runngrok.png)
+
+4. In Dynatrace go to Settings -> Integration -> Problem Notification -> Set up notification -> Custom Integration and configure as shown below using your IP from ngrok
 ![](./images/customintegration.png)
+
+5. Everytime you click on Send test notification and pass some invalid parameters or everytime Dynatrace actually sends information to your node.js app you will see log entries in serviceoutput.log. Here are some outputs from my local trial:
+![](./images/logoutput.png)
+
+6. If Dynatrace passes a real problem ID to your handler then the handler will also post a comment back to the problem ticket
+![](./images/problemcomment.png)
+
+ENJOY and let me know how this helps!

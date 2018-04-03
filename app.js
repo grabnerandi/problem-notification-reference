@@ -8,8 +8,10 @@ var port = process.env.PORT || 80,
 // ======================================================================
 // Here are some global config entries that change the behavior of the app
 // ======================================================================
-var DT_API_URL = "https://YOURTENTANT.live.dynatrace.com";
-var DT_API_TOKEN = "YOURTOKEN!";
+// var DT_API_URL = "https://YOURTENTANT.live.dynatrace.com";
+var DT_API_URL = "https://hci34192.live.dynatrace.com"
+// var DT_API_TOKEN = "YOURTOKEN!";
+var DT_API_TOKEN = "STervj4xTNynLdbVaZLq9";
 var requiredFields = ["PID","ImpactedEntities"];
 var requiredHeaders = ["x-source"];
 
@@ -203,12 +205,14 @@ var server = http.createServer(function (req, res) {
 				response.body = "Seems that everything went fine!";
 
 				writeResponse(res, response);
+				return;
             } else  {
 				response.statusCode = 400;
 				response.statusCodeText = "ERROR";
 				response.body = "Not supported endpoint: " + req.url + ". Try /dthandler";
 				log(SEVERITY_ERROR, response.body);
 				writeResponse(res, response);
+				return;
             }
         });
     } else 	{
@@ -217,6 +221,7 @@ var server = http.createServer(function (req, res) {
 		response.statusCodeText = "OK";
 		response.body = "Thanks for calling our Dynatrace Problem Notification Handler";
 		writeResponse(res, response);
+		return;
 	}	
 });
 
