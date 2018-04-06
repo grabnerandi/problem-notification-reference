@@ -9,7 +9,7 @@ The first sample we provide is written in Node.js and it implements several best
 4. Pull all Problem Details through Dynatrace REST API
 5. Push a Comment back to Dynatrace
 
-To run this sample and connect it with Dynatrace
+To run this sample and connect it with Dynatrace. For more background information on how to best leverage custom integrations check out my blog on [How to write a custom Dynatrace Problem Notification Integration](https://www.dynatrace.com/news/blog/how-to-write-a-custom-dynatrace-problem-notification-integration/)
 
 **Pre-Requisits**
 1. Sign-up for a [Dynatrace SaaS Free Trial](http://bit.ly/dtsaastrial)
